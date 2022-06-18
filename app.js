@@ -9,11 +9,7 @@ const port = 3030;
 app.use(express.static('public'));
 
 //! Rutas
-app.get("/", (req, res) =>
-{
-    //res.sendFile(__dirname + "/views/index.html");
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
-})
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, 'views', 'index.html')));
 app.get("/babbage", (req, res) => res.sendFile(path.join(__dirname, 'views', 'babbage.html')));
 app.get("/berners-lee", (req, res) => res.sendFile(path.join(__dirname, 'views', 'berners-lee.html')));
 app.get("/clarke", (req, res) => res.sendFile(path.join(__dirname, 'views', 'clarke.html')));
@@ -24,5 +20,5 @@ app.get("/turing", (req, res) => res.sendFile(path.join(__dirname, 'views', 'tur
 
 app.listen(port, () =>
 {
-    console.log("Servidor corriendo en puerto http://localhost:" + port + "/");
+    console.log("Servidor corriendo (http://localhost:" + port + "/)");
 });

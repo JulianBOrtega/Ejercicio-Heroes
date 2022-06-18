@@ -1,0 +1,35 @@
+*
+{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    color: blue;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    display: inline;
+    margin-left: 10px;
+    
+}
+
+.spot
+{
+    display: inline-block;
+    background: white;
+    padding: 1;
+}
